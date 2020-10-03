@@ -1,0 +1,8 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.consumiblessubmarino;
+
+public <acorazado> = reparaciones {TERCERO} |
+                     sonar {TERCERO} |
+                     motor {TERCERO} |
+                     evasion | control de daños {DANOS};

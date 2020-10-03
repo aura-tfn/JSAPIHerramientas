@@ -1,0 +1,8 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar fonetica.espera;
+
+
+public <espera> = (espera un momento | ahora vengo | un minuto | un momento) {ESPERA};
+                  
+public <vuelta> = (ya he vuelto | estoy aquí | atiendeme | seguimos) {CONTINUA} ;

@@ -1,0 +1,68 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar fonetica.netbeans;
+
+public <netbeans> =  <reservada> | <operador> | <identificador> | <modificadores> |
+                     <script> | <delimitador> | <teclasrapidas> ;
+ <reservada> = abstract | assert | boolean | break | byte | case | catch | char | 
+              class | const | continue | default | do | double | else | enum | 
+              extends | false | final | finally | float | for | goto | if | implements | 
+              import | instanceof | int | interface | long | native | new | nulo {null} |
+              package | private | protected | public | return | short | static | 
+              strictfp | super | switch | synchronized | this | throw | throws | 
+              transient | try | true | sin resultado {void} | volatile | while;
+
+ <operador> = suma { MAS } |
+             menos { - } |
+             multiplicación  { ASTERISCO } |
+             división { / } |
+             módulo { % } |
+             añadira { MAS IGUAL}| 
+             restara { - IGUAL} |
+             multiplicarpor { ASTERISCO IGUAL } |
+             dividirpor { / IGUAL} |
+             instanceof | 
+             incrementar { MAS MAS } |
+             decrementar { - -} |
+             menorque { ANGIZQUIERDO } |
+             mayorque { ANGDERECHO } |
+             igualque { IGUAL IGUAL } | 
+             distintoa { ! IGUAL } | asigna { IGUAL } |
+             mayoroigualque { IGUAL ANGIZQUIERDO } |
+             menoroigualque { IGUAL ANGDERECHO } |
+             andexclusivo { && } | 
+             orexclusivo { BARRAVERTICAL BARRAVERTICAL } |
+             negado { ! } |
+             andbinario { & } |
+             orbinario { BARRAVERTICAL } |
+             desplazamientoizquierdo { ANGIZQUIERDO ANGIZQUIERDO } |
+             desplazamientoderecho { ANGDERECHO ANGDERECHO };
+
+ <identificador> = string {String} | 
+                  integer {Integer} | 
+                  double {Double} ;
+
+ <script> =  completa {completa deletreo} |
+            lista {al TAB}          |
+            fori  {fori TAB}        |
+            fore  {fore TAB}        |
+            mapa {ma TAB}           ;
+                  
+<delimitador> = bloque { ABRIRLLAVE INTRO } |
+                paréntesis  { ABRIRPARENTESIS } |
+                cadena { COMILLAS } |
+                indice { ABRIRCORCHETE } | 
+                caracter { ' };
+
+<teclasrapidas> = guardar { CTRL MAY s} |
+                  deshacer { CTRL z} |
+                  importaciones { CTRL MAY i } |
+                  formato { ALT MAY f } |
+                  ejecutar { F6 } |
+                  compilar { MAY F11 } |
+                  debug { CTRL F5 } |
+                  nuevo identificador { NUEVAVAR } |
+                  identificador { VARIABLE } |
+                  lista variables;
+
+<modificadores> = clase { CONMAY } ;

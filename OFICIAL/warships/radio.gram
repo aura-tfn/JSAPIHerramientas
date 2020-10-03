@@ -1,0 +1,16 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.radio;
+
+public <sennal> = comunicaciones <mensaje> ;
+ <mensaje> =  negativo {F02} |
+              atencion {F03} |
+              recibido {F04} |
+              ayuda    {F05} |
+              apoyo antiaéreo {F06} |
+              inteligencia {F07} |
+              barrera de humo {F08} |
+              atras {F09} |
+              buena suerte {F10} |
+              bien hecho {F11} |
+              gracias {F12} ;

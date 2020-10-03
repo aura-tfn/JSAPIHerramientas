@@ -1,0 +1,7 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar testjsg.test;
+
+public <comando> = <test> | <fin>;
+<test> = prueba de test {OK};
+<fin> = finaliza {FIN};

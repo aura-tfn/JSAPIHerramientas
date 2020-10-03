@@ -1,0 +1,11 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar fonetica.control;
+
+public <espera> = (espera un momento | ahora vengo | un minuto | un momento) {ESPERA} |
+                  (ya he vuelto | estoy aquí | atiendeme | seguimos) {CONTINUA} ;
+public <fin> = finaliza {FIN};
+
+public <controldeletreo> = deletreo |
+                           yaesta;
+

@@ -1,0 +1,5 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.consumibles;
+
+public <danos> = control de daños {DANOS};

@@ -1,0 +1,14 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.artillero;
+
+public <artillero> = periscopio | fuego;
+public <municion> =  torpedos | explosivos | penetrantes | cargas de profundidad {CARGAS};
+public <vista> = aproxima {ZOOMIN} | aleja {ZOOMOUT} | vista exterior {EXTERIOR};
+public <disparo> = disparo unitario {unitario} |
+                   disparo secuencial {secuencial} | 
+                   disparo en salvas {salva};
+public <objetivos> = objetivo primario |
+                     objetivo secundario |
+                     balance |
+                     marca;

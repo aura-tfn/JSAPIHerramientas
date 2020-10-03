@@ -1,0 +1,12 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar raton;
+
+public <mouse> = doble click { D_CLICK } |
+            click { CLICK } |
+            click derecha { R_CLICK } |
+            triple click { T_CLICK } |
+            arrastra {DRAG} |
+            arrastre derecho {RDRAG} |
+            suelta {MLEAVE} |
+            raton terminado {FIN} ;

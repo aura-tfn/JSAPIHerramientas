@@ -1,0 +1,5 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.consumiblesyork;
+
+public <myoko> = antiaéreos {t} | sonar {t} | radar {y} | control de daños {r};

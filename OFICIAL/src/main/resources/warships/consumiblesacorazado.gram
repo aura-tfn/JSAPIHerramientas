@@ -1,0 +1,5 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.consumiblesacorazado;
+
+public <acorazado> = avion {y} | reparaciones {t} | control de daños {r};

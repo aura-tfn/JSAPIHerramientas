@@ -1,0 +1,9 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.oficialsub;
+
+public <artillero> = periscopio | fuego;
+public <municion> =  torpedos | ping  ;
+public <vista> = aproxima {ZOOMIN} | aleja {ZOOMOUT} | vista exterior {EXTERIOR};
+
+public <objetivos> = objetivo primario ;

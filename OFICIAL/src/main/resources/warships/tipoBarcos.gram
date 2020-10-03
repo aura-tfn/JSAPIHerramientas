@@ -1,0 +1,19 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.tipoBarcos;
+
+public <barcos>   = <destructor> | <crucero> | <acorazado> | <portaviones> | submarino;
+       <portaviones> = portaviones ;
+       <destructor>  = kagero {DGENERICO} | vampire {DGENERICO} | guepard {DGENERICO} |
+                       minsk {DGENERICO}  | maas {DGENERICO} | zeta veintitrés {DGENERICO} ;
+       <crucero>     = fiyi | leander | edimburgo | crucero york {york} | trento | montecucholi | devonsaia 
+                      | crucero mioko {mioko} | alyeri | clivelan | aoba | alaska | chapayev ;
+       <acorazado>   = tejas {AGENERICO} | 
+                       colorado {AGENERICO} |
+                       norz carolina {AGENERICO} |
+                       neisenau {AGENERICO} |
+                       fuso {AGENERICO} |
+                       pioter velikí {AGENERICO} |
+                       izmail {AGENERICO} |
+                       rey jorge {AGENERICO} |
+                       nagato {AGENERICO} ;

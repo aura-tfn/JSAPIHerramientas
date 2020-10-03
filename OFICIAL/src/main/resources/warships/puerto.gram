@@ -1,0 +1,7 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.puerto;
+import warships.tipoBarcos.*;
+
+public <inicio> = zarpamos | sesion terminada {FINSESION};
+public <tipoBarco> = <barcos> ;

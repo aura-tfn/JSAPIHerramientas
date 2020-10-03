@@ -1,0 +1,18 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar warships.navegantesubm;
+
+public <motor> = avante un cuarto {1/4} |
+                 avante media  {1/2} |
+                 avante toda {FULL} |
+                 avante tres cuartos  {3/4} |
+                 atras toda {ATRAS} | 
+                 paren maquinas {STOP} ;
+
+public <navegacion> = todo a babor |
+                      todo a estribor | 
+                      media a babor |
+                      media a estribor |  a proa |
+                      arriba | abajo | vale;
+ 
+public <finBatalla> = fin de la batalla {FINBATALLA} ;

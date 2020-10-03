@@ -1,0 +1,18 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar fonetica.puente;
+
+
+public <oficial> = <espera> | <fin> | <navegacion> | <rumbo> | <motor> |    
+                    <disparo> | <comandos> ;
+
+
+public <navegacion> = todo a <rumbo> | media a <rumbo> |  a proa;
+ <rumbo> = babor | estribor ;
+ <motor> = avante <potencia> | atras toda | paren maquinas ;
+
+<potencia> = un cuarto | media | tres cuartos | toda ;
+public <disparo> = fuego {D_CLICK} | penetrantes {1} | explosivas {2} | torpedos {3};
+public <comandos> = periscopio | vista {R_CLICK} | antiaereo {CTRL} | fija {CLICK suelta} |
+                    suelta |  control de daños {r} | reparaciones {t} ;
+  
