@@ -2,7 +2,7 @@
 package es.aura.sapi.wowarships;
 
 
-public enum TipoRumbo implements Comparable<TipoRumbo> {
+public enum TipoRumbo {
     
     TODO_BABOR,
     MEDIA_BABOR,

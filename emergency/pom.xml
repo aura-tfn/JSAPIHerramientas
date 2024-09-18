@@ -1,36 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>es.aura.casa.sapi</groupId>
-    <artifactId>jsapi</artifactId>
-    <name>JSAPI PARA WINDOWS</name>
-    <version>1.2.0</version>
-    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>es.aura.casa</groupId>
+        <artifactId>JSAPIHerramientas</artifactId>
+        <version>1.2.0</version>
+    </parent>
+
+    <artifactId>emergency</artifactId>
+    <name>emergency</name>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-    <dependencies>
 
+    <dependencies>
         <dependency>
-            <groupId>net.java.dev.jna</groupId>
-            <artifactId>jna-platform</artifactId>
-            <version>5.2.0</version>
-        </dependency>        
-        <dependency>
-            <groupId>com.cloudsgarden</groupId>
-            <artifactId>cgjsapi</artifactId>
-            <version>1.70</version>
-        </dependency>
-        <dependency>
-            <groupId>com.cloudsgarden</groupId>
-            <artifactId>cgjsapi</artifactId>
-            <version>1.70</version>
-            <type>dll</type>
-        </dependency>
+            <groupId>es.aura.casa.sapi</groupId>
+            <artifactId>jsapi</artifactId>
+            <version>1.2.0</version>
+        </dependency>             
     </dependencies>
 
     <build>
@@ -54,5 +47,4 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             </plugin>
          </plugins>
     </build>
-
 </project>

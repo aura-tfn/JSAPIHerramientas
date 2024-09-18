@@ -76,7 +76,7 @@ public class Teclas extends HashMap<String, Object> {
         put("ABRIRCORCHETE", "[");
         put("CERRARCORCHETE", "]");
         put("CERRARINTERROGACION", "?");
-        put("ABRIRINTERROGACION", "¿");
+        put("ABRIRINTERROGACION", "Â¿");
         put("BARRAVERTICAL", "|");
         put("ANGDERECHO", ">");
     }

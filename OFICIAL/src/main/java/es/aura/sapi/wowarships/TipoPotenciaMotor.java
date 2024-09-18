@@ -2,7 +2,7 @@
 package es.aura.sapi.wowarships;
 
 
-public enum TipoPotenciaMotor implements Comparable<TipoPotenciaMotor> {
+public enum TipoPotenciaMotor {
     
     ATRAS_TODA,
     STOP,

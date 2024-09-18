@@ -5,6 +5,7 @@ import es.aura.casa.sapi.oyentedev.GrupoAcciones;
 import es.aura.casa.sapi.oyentedev.Sapi;
 import javax.speech.recognition.RuleGrammar;
 
+@SuppressWarnings("unused")
 public abstract class Util  {
 
     public static void addControlEspera(Sapi sapi) {

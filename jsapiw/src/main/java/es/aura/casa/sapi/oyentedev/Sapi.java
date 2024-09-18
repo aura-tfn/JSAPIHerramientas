@@ -19,7 +19,7 @@ import javax.speech.AudioException;
 import javax.speech.Central;
 import javax.speech.Engine;
 import javax.speech.EngineException;
-import javax.speech.EngineList;
+// import javax.speech.EngineList;
 import javax.speech.EngineModeDesc;
 import javax.speech.EngineStateError;
 import javax.speech.recognition.GrammarException;
@@ -29,6 +29,7 @@ import javax.speech.recognition.RuleGrammar;
 import javax.speech.recognition.RuleToken;
 import javax.speech.synthesis.Synthesizer;
 
+@SuppressWarnings("unused")
 public class Sapi extends ResultAdapter {
 
     private static final Logger LOG = Logger.getLogger(Sapi.class.getName());

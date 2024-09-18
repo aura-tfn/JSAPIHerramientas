@@ -254,7 +254,7 @@ public class Teclado {
             case 'n':
                 doType(VK_N);
                 break;
-            case 'ñ':
+            case 'Ã±':
                 typeUnicode("0241");
                 break;
             case 'o':
@@ -335,7 +335,7 @@ public class Teclado {
             case 'N':
                 doType(VK_SHIFT, VK_N);
                 break;
-            case 'Ñ':
+            case 'Ã‘':
                 typeUnicode("0209");
                 break;
             case 'O':
@@ -435,11 +435,11 @@ public class Teclado {
             case '`':
                 doType(128);
                 break;
-            case '´':
+            case 'Â´':
                 doType(129);
                 doType(VK_SPACE);
                 break;
-            case '¨':
+            case 'Â¨':
                 doType(VK_SHIFT, 129);
                 doType(VK_SPACE);
                 break;
@@ -515,16 +515,16 @@ public class Teclado {
             case '?':
                 doType(VK_SHIFT, VK_QUOTE);
                 break;
-            case '¿':
+            case 'Â¿':
                 doType(VK_SHIFT, VK_INVERTED_EXCLAMATION_MARK);
                 break;
-            case '¡':
+            case 'Â¡':
                 doType(VK_INVERTED_EXCLAMATION_MARK);
                 break;
             case ' ':
                 doType(VK_SPACE);
                 break;
-            case '·':
+            case 'Â·':
                 doType(VK_SHIFT, VK_3);
                 break;
             default:

@@ -6,7 +6,6 @@ import java.awt.Font;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.text.DefaultCaret;
 
 
 public class LogWindow extends JFrame {

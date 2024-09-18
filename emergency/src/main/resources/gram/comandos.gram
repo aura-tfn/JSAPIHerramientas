@@ -1,0 +1,20 @@
+#JSGF V1.0 ISO8859-1 es;
+
+grammar gram.comandos;
+
+public <comando> = <casilla> <vehiculo> aqui {R_CLICK_ABSOLUTO} |
+              <casilla> aqui {R_CLICK} | 
+                    <casilla> retirada {R_CLICK} |
+                    <casilla> montar |
+                    accion <casilla>;
+
+casilla = uno {1}| dos {2}| tres {3}| cuatro {4}| cinco {5}| seis {6};
+
+vehiculo = <tipo_camion> |
+           medico {w}| ambulancia {e}|
+           policia {r}| swat {d}|
+           grua {f}| ingeniero {r};
+
+tipo_camion = bomberos {a}|
+              cisterna {q}|
+              escalera {z};
