@@ -28,7 +28,7 @@ public abstract class Util  {
                 });
             }
         };
-        Contexto espera = Contexto.crea(sapi, acciones, "espera.gram");
+        // Contexto espera = Contexto.crea(sapi, acciones, "espera.gram");
     } 
 
 

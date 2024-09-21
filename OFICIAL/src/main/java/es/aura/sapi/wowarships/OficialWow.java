@@ -26,7 +26,7 @@ public class OficialWow {
         puerto = Contexto.crea(sapi, accionesPuerto, "warships/puerto.gram");
         accionesPuerto.setPuerto(puerto);
         sapi.desactivaRegla("tipoBarco", "warships.puerto");
-        sapi.di("tripulación a la espera");
+        sapi.di("tripulaciÃ³n a la espera");
     }
 
     @SuppressWarnings("ResultOfObjectAllocationIgnored")

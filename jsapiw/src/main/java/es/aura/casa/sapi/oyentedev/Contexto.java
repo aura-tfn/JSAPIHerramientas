@@ -19,12 +19,15 @@ public class Contexto extends ResultAdapter {
     private RuleGrammar gramatica;
     private boolean enespera;
 
-    public static Contexto crea(Sapi sapi, GrupoAcciones acciones,
+    public static Contexto crea(GrupoAcciones acciones,
             String fileName) {
         Contexto contexto = new Contexto();
+        Sapi sapi = new Sapi();
         contexto.setSapi(sapi);
         contexto.setAcciones(acciones);
-        contexto.setGramatica(sapi.loadGrammar(fileName));
+        String workDir = System.getProperty("user.dir");
+        LOG.info("Current directory: " + workDir);
+        contexto.setGramatica(sapi.loadGrammar( fileName));
         contexto.getGramatica().addResultListener(contexto);
         int barra = fileName.lastIndexOf("/");
         String nombreContexto = fileName.substring(++barra).replace(".gram", "");

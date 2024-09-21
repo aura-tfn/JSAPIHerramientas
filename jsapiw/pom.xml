@@ -6,7 +6,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     <groupId>es.aura.casa.sapi</groupId>
     <artifactId>jsapi</artifactId>
     <name>JSAPI PARA WINDOWS</name>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

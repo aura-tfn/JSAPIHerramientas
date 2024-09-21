@@ -2,19 +2,27 @@
 
 grammar gram.comandos;
 
-public <comando> = <casilla> <vehiculo> aqui {R_CLICK_ABSOLUTO} |
-              <casilla> aqui {R_CLICK} | 
-                    <casilla> retirada {R_CLICK} |
-                    <casilla> montar |
-                    accion <casilla>;
+public <comando> = <casilla> <vehiculo> aqui {RCLICK_ABSOLUTO} |
+              <casilla> aqui {RCLICK_ABSOLUTO} | 
+                    <casilla> <movimiento> |
+                    accion <accion> |
+                    tropa <tropa> aqui  {RCLICK_ABSOLUTO} ;
 
-casilla = uno {1}| dos {2}| tres {3}| cuatro {4}| cinco {5}| seis {6};
 
-vehiculo = <tipo_camion> |
-           medico {w}| ambulancia {e}|
-           policia {r}| swat {d}|
+
+<casilla> = uno {1}| dos {2}| tres {3}| cuatro {4}| cinco {5}| seis {6};
+
+<tropa> = uno {m}| dos {,}| tres {.}| cuatro {-}| cinco {o}| seis {p};
+
+<vehiculo> = <tipo_camion> |
+           medico {w}| ambulancia {s}|
+           policia {e}| swat {d}|
            grua {f}| ingeniero {r};
 
-tipo_camion = bomberos {a}|
+<tipo_camion> = bomberos {a}|
               cisterna {q}|
-              escalera {z};
+              escalera {y};
+
+<accion> = uno {q}| dos {w}| tres {e}| cuatro {r};
+
+<movimiento> = retirada {gr} | vuelve {t} | desmonta {f RCLICK_ABSOLUTO} | monta {g};
