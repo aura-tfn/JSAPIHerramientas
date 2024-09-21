@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
         AccionesEmergency accionesEmergency = new AccionesEmergency();
-        Contexto contexto = Contexto.crea(accionesEmergency, "src/main/resources/gram/comandos.gram");
+        Contexto contexto = Contexto.crea(accionesEmergency, "gram/comandos.gram");
         Sapi sapi = contexto.getSapi();
         sapi.di("Todo preparado");
         LOG.info("Todo preparado");
